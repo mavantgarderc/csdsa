@@ -33,6 +33,16 @@ dotnet_diagnostic.SA1413.severity = none
 dotnet_diagnostic.SA1600.severity = none
 dotnet_diagnostic.SA1633.severity = none
 
+dotnet_diagnostic.SA1623.severity = none   # Property doc must start with "Gets"/"Sets"
+dotnet_diagnostic.SA1629.severity = none   # Documentation text should end with a period
+dotnet_diagnostic.SA1516.severity = none   # Elements should be separated by blank line
+dotnet_diagnostic.SA1642.severity = none   # Constructor summary standard text
+dotnet_diagnostic.SA1201.severity = none   # Constructor should not follow a property
+dotnet_diagnostic.SA1202.severity = none   # 'public' members should come before 'private'
+dotnet_diagnostic.SA1127.severity = none   # Generic constraints on their own line
+dotnet_diagnostic.SA1615.severity = none   # Element return value should be documented
+dotnet_diagnostic.SA1506.severity = none   # Doc header followed by blank line
+
 ############################################################
 # Code Style Rules – All definitive, no suggestions
 ############################################################
@@ -111,7 +121,15 @@ dotnet_naming_style.pascal_case.capitalization = pascal_case
 ############################################################
 # Namespaces / Usings – Strict
 ############################################################
+
 csharp_style_namespace_declarations = file_scoped:error
 dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = true
 csharp_using_directive_placement = outside_namespace:error
+
+############################################################
+# Analyzer Adjustments – DSA-specific
+############################################################
+
+# Allow multidimensional arrays for didactic reasons (Flatten, ToRectangular, etc.)
+dotnet_diagnostic.CA1814.severity = none
