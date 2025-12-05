@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="IndexOf(T)"/> method for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Searches for the specified element and returns the zero-based index

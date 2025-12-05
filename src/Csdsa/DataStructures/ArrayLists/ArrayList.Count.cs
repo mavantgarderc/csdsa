@@ -1,9 +1,6 @@
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="Count"/> property for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Gets the number of elements contained in the list.

@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides <c>Reverse</c> operations for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Reverses the order of the elements in the entire list.

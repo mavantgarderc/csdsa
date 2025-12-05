@@ -1,9 +1,6 @@
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="IsReadOnly"/> property for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Gets a value indicating whether the collection is read-only.

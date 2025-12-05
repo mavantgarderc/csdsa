@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides <c>LastIndexOf</c> overloads for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Returns the zero-based index of the last occurrence of a value in the entire list.

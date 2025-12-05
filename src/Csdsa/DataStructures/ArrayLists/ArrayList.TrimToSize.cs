@@ -1,9 +1,6 @@
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="TrimToSize"/> method for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Sets the capacity to the actual number of elements in the list,

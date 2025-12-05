@@ -1,9 +1,6 @@
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="Add(T)"/> method for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Adds an element to the end of the list.

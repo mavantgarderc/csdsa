@@ -1,16 +1,14 @@
-using System;
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
 /// <summary>
 /// Defines a contract for a dynamically sized, array-backed list of elements.
 /// <para>
-/// This interface models the same behavior as <see cref="ArrayList{T}"/>,
-/// including capacity management, range operations, searches, and predicates-based APIs.
+/// This interface models the same behavior as <c>ArrayListUtils&lt;T&gt;</c>,
+/// including capacity management, range operations, searches, and predicate-based APIs.
 /// </para>
 /// </summary>
-public interface IArrayList<T> : ICollection<T>
+/// <typeparam name="T">The type of elements stored in the list.</typeparam>
+public interface IArrayList<T>
 {
     /// <summary>
     /// Gets or sets the total number of elements that the internal array can hold
@@ -124,9 +122,9 @@ public interface IArrayList<T> : ICollection<T>
     /// <param name="startIndex">The zero-based starting index of the range.</param>
     /// <param name="count">The number of elements in the range.</param>
     /// <returns>
-    /// A new <see cref="ArrayList{T}"/> containing the specified range of elements.
+    /// A new <see cref="ArrayListUtils{T}"/> containing the specified range of elements.
     /// </returns>
-    ArrayList<T> GetRange(int startIndex, int count);
+    ArrayListUtils<T> GetRange(int startIndex, int count);
 
     /// <summary>
     /// Searches for the specified element in the entire sorted list using
@@ -236,7 +234,7 @@ public interface IArrayList<T> : ICollection<T>
     /// <param name="match">The predicate to test elements.</param>
     /// <returns>
     /// The first element that matches the predicate, if found; otherwise,
-    /// <c>default(T)</c>.
+    /// the default value of the element type.
     /// </returns>
     T Find(Predicate<T> match);
 
@@ -245,9 +243,9 @@ public interface IArrayList<T> : ICollection<T>
     /// </summary>
     /// <param name="match">The predicate to test elements.</param>
     /// <returns>
-    /// A new <see cref="ArrayList{T}"/> containing all matching elements.
+    /// A new <see cref="ArrayListUtils{T}"/> containing all matching elements.
     /// </returns>
-    ArrayList<T> FindAll(Predicate<T> match);
+    ArrayListUtils<T> FindAll(Predicate<T> match);
 
     /// <summary>
     /// Determines whether the list contains an element that matches
@@ -301,7 +299,7 @@ public interface IArrayList<T> : ICollection<T>
     /// <param name="arrayIndex">
     /// The zero-based index in <paramref name="array"/> at which copying begins.
     /// </param>
-    new void CopyTo(T[] array, int arrayIndex);
+    void CopyTo(T[] array, int arrayIndex);
 
     /// <summary>
     /// Sorts the elements in the entire list using the default comparer.

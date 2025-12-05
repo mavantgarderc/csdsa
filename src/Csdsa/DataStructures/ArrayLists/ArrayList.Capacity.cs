@@ -1,22 +1,24 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
 /// <summary>
-/// Provides the <see cref="Capacity"/> property for <see cref="ArrayList{T}"/>.
+/// Provides the <see cref="Capacity"/> property for <see cref="ArrayListUtils{T}"/>.
 /// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Gets or sets the total number of elements that the internal array can hold
     /// without resizing.
     /// </summary>
     /// <exception cref="ArgumentOutOfRangeException">
-    /// Thrown when the specified capacity is less than the current <see cref="Count"/>.
+    /// Thrown when the specified capacity is less than the current Count.
     /// </exception>
     public int Capacity
     {
-        get { return _items.Length; }
+        get
+        {
+            return _items.Length;
+        }
+
         set
         {
             if (value < _size)
@@ -41,7 +43,7 @@ public partial class ArrayList<T>
                 }
                 else
                 {
-                    _items = [];
+                    _items = Array.Empty<T>();
                 }
             }
         }

@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides capacity management for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Ensures that the list can hold at least the specified number of elements

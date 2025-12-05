@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides index-based element access for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Gets or sets the element at the specified index.
@@ -26,7 +21,6 @@ public partial class ArrayList<T>
 
             return _items[index];
         }
-
         set
         {
             if ((uint)index >= (uint)_size)

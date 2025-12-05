@@ -1,12 +1,6 @@
-using System.Collections.Generic;
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides sorting operations for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Sorts the elements in the entire list using the default comparer.

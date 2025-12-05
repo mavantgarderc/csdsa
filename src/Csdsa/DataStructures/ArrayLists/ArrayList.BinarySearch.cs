@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides <c>BinarySearch</c> overloads for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Searches for the specified element in the entire sorted list using

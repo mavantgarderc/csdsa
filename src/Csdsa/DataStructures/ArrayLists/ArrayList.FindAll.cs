@@ -1,29 +1,22 @@
-using System;
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="FindAll(System.Predicate{T})"/> method
-/// for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Retrieves all elements that match the conditions defined by the specified predicate.
     /// </summary>
     /// <param name="match">The predicate to test elements.</param>
     /// <returns>
-    /// A new <see cref="ArrayList{T}"/> containing all matching elements.
+    /// A new <see cref="ArrayListUtils{T}"/> containing all matching elements.
     /// </returns>
     /// <exception cref="ArgumentNullException">
     /// Thrown when <paramref name="match"/> is <see langword="null"/>.
     /// </exception>
-    public ArrayList<T> FindAll(Predicate<T> match)
+    public ArrayListUtils<T> FindAll(Predicate<T> match)
     {
         ArgumentNullException.ThrowIfNull(match);
 
-        ArrayList<T> result = new ArrayList<T>();
+        ArrayListUtils<T> result = new ArrayListUtils<T>();
 
         for (int i = 0; i < _size; i++)
         {

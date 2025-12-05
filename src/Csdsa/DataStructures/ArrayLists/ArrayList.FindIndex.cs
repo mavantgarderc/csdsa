@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides <c>FindIndex</c> overloads for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Searches for an element that matches the conditions defined by the specified

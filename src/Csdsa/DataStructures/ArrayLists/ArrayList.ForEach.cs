@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="ForEach(System.Action{T})"/> method
-/// for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Performs the specified action on each element of the list.
@@ -34,8 +27,7 @@ public partial class ArrayList<T>
         {
             if (version != _version)
             {
-                throw new InvalidOperationException(
-                    "Collection was modified during enumeration.");
+                throw new InvalidOperationException("Collection was modified during enumeration.");
             }
 
             action(_items[i]);

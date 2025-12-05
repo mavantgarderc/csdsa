@@ -1,11 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="ToArray"/> method for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Copies the elements of the list to a new array.
@@ -17,7 +12,7 @@ public partial class ArrayList<T>
     {
         if (_size == 0)
         {
-            return [];
+            return default;
         }
 
         T[] array = new T[_size];

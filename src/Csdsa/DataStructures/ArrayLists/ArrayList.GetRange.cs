@@ -1,11 +1,9 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
 /// <summary>
-/// Provides the <see cref="GetRange(int, int)"/> method for <see cref="ArrayList{T}"/>.
+/// Provides the <see cref="GetRange(int, int)"/> method for <see cref="ArrayListUtils{T}"/>.
 /// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Creates a shallow copy of a range of elements in the list.
@@ -13,36 +11,39 @@ public partial class ArrayList<T>
     /// <param name="startIndex">The zero-based starting index of the range.</param>
     /// <param name="count">The number of elements in the range.</param>
     /// <returns>
-    /// A new <see cref="ArrayList{T}"/> containing the specified range of elements.
+    /// A new <see cref="ArrayListUtils{T}"/> containing the specified range of elements.
     /// </returns>
     /// <exception cref="ArgumentOutOfRangeException">
-    /// Thrown when <paramref name="startIndex"/> or <paramref name="count"/> is less than zero.
+    /// Thrown when <paramref name="startIndex"/> or <paramref name="count"/> is negative.
     /// </exception>
     /// <exception cref="ArgumentException">
-    /// Thrown when the range defined by <paramref name="startIndex"/> and <paramref name="count"/>
-    /// exceeds the bounds of the list.
+    /// Thrown when <paramref name="startIndex"/> and <paramref name="count"/> do not specify a valid range.
     /// </exception>
-    public ArrayList<T> GetRange(int startIndex, int count)
+    public ArrayListUtils<T> GetRange(int startIndex, int count)
     {
-        if (startIndex < 0 || count < 0)
+        if (startIndex < 0)
         {
-            throw new ArgumentOutOfRangeException(
-                startIndex < 0 ? nameof(startIndex) : nameof(count));
+            throw new ArgumentOutOfRangeException(nameof(startIndex), "Start index must be non-negative.");
+        }
+
+        if (count < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(count), "Count must be non-negative.");
         }
 
         if (_size - startIndex < count)
         {
-            throw new ArgumentException("Invalid offset and length.");
+            throw new ArgumentException("The range defined by startIndex and count exceeds the bounds of the list.");
         }
 
-        ArrayList<T> list = new ArrayList<T>(count);
+        ArrayListUtils<T> result = new ArrayListUtils<T>(count);
 
         if (count > 0)
         {
-            Array.Copy(_items, startIndex, list._items, 0, count);
-            list._size = count;
+            Array.Copy(_items, startIndex, result._items, 0, count);
+            result._size = count;
         }
 
-        return list;
+        return result;
     }
 }

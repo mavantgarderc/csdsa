@@ -1,15 +1,12 @@
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the default constructor for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
-    /// Initializes a new instance of the <see cref="ArrayList{T}"/> class
+    /// Initializes a new instance of the <see cref="ArrayListUtils{T}"/> class
     /// with a default initial capacity.
     /// </summary>
-    public ArrayList()
+    public ArrayListUtils()
     {
         _items = new T[DefaultCapacity];
     }

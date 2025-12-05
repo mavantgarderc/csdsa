@@ -1,12 +1,6 @@
-using System;
-
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides the <see cref="RemoveRange(int, int)"/> method
-/// for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Removes a range of elements from the list.
@@ -24,8 +18,7 @@ public partial class ArrayList<T>
     {
         if (startIndex < 0 || count < 0)
         {
-            throw new ArgumentOutOfRangeException(
-                startIndex < 0 ? nameof(startIndex) : nameof(count));
+            throw new ArgumentOutOfRangeException(startIndex < 0 ? nameof(startIndex) : nameof(count));
         }
 
         if (_size - startIndex < count)

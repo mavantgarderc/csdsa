@@ -1,13 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace Csdsa.DataStructures.ArrayList;
 
-/// <summary>
-/// Provides enumeration support for <see cref="ArrayList{T}"/>.
-/// </summary>
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T> : IEnumerable<T>
 {
     /// <summary>
     /// Returns an enumerator that iterates through the list.
@@ -28,13 +23,13 @@ public partial class ArrayList<T>
     }
 
     /// <summary>
-    /// Represents an enumerator for <see cref="ArrayList{T}"/>.
+    /// Represents an enumerator for <see cref="ArrayListUtils{T}"/>.
     /// </summary>
     private sealed class Enumerator : IEnumerator<T>
     {
-        private readonly ArrayList<T> _list;
-        private int _index;
+        private readonly ArrayListUtils<T> _list;
         private readonly int _version;
+        private int _index;
         private T _current;
 
         /// <summary>
@@ -42,7 +37,7 @@ public partial class ArrayList<T>
         /// for the specified list.
         /// </summary>
         /// <param name="list">The list to enumerate.</param>
-        internal Enumerator(ArrayList<T> list)
+        internal Enumerator(ArrayListUtils<T> list)
         {
             _list = list;
             _index = -1;
@@ -122,8 +117,7 @@ public partial class ArrayList<T>
         {
             if (_version != _list._version)
             {
-                throw new InvalidOperationException(
-                    "Collection was modified during enumeration.");
+                throw new InvalidOperationException("Collection was modified during enumeration.");
             }
         }
     }

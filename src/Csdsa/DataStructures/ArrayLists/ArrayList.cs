@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Csdsa.DataStructures.ArrayList;
 
 /// <summary>
@@ -15,7 +13,7 @@ namespace Csdsa.DataStructures.ArrayList;
 ///   </item>
 ///   <item>
 ///     <description>
-///     Generic, type-safe collection implementation using <see cref="T"/>.
+///     Generic, type-safe collection implementation using <typeparamref name="T" />.
 ///     </description>
 ///   </item>
 ///   <item>
@@ -55,7 +53,7 @@ namespace Csdsa.DataStructures.ArrayList;
 /// </list>
 /// </summary>
 /// <typeparam name="T">The type of elements stored in the list.</typeparam>
-public partial class ArrayList<T> : ICollection<T>, IEnumerable<T>
+public partial class ArrayListUtils<T>
 {
     private const int DefaultCapacity = 4;
     private const int MaxArrayLength = 0x7FEFFFFF;

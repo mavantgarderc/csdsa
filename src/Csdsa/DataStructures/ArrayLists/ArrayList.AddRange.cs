@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Csdsa.DataStructures.ArrayList;
 
-public partial class ArrayList<T>
+public partial class ArrayListUtils<T>
 {
     /// <summary>
     /// Adds the elements of the specified collection to the end of the list.
