@@ -1,10 +1,5 @@
-using System;
-
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides methods for merging sorted arrays.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

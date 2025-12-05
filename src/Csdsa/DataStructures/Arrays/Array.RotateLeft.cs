@@ -1,8 +1,5 @@
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides methods for rotating arrays to the left.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

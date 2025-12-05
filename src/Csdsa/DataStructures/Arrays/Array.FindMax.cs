@@ -1,10 +1,5 @@
-using System;
-
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides methods for finding extremum values in arrays.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

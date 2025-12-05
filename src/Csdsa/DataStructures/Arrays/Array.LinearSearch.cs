@@ -1,8 +1,5 @@
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides linear search operations over arrays.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

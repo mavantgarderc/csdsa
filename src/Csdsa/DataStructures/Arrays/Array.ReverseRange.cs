@@ -1,8 +1,5 @@
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides public helper methods for array manipulations.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

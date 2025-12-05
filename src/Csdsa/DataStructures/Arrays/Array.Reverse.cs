@@ -1,8 +1,5 @@
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides methods for reversing arrays.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>

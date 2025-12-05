@@ -1,8 +1,5 @@
 namespace Csdsa.DataStructures.Arrays;
 
-/// <summary>
-/// Provides binary search operations over sorted arrays.
-/// </summary>
 public static partial class ArrayUtils
 {
     /// <summary>
