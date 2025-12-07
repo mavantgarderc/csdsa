@@ -1,41 +1,37 @@
 # Roadmap
 
-- [x] Linear Structures & Sequential Access Patterns
+- [X] Linear Structures & Sequential Access Patterns
   - Linear Data Structures
-    1.  Arrays
+    ~~1.  Arrays~~
 
-    2.  Linked Lists (Singly, Doubly, Circular)
+    ~~2.  Linked Lists (Singly, Doubly, Circular)~~
 
-    3.  Stacks
+    ~~3.  Strings~~
 
-    4.  Queues
+    ~~4.  Vectors/Dynamic Arrays~~
 
-    5.  Strings
+    ~~5.  Array Lists~~
 
-    6.  Vectors/Dynamic Arrays
+    ~~6.  Deques (Double-ended Queues)~~
 
-    7.  Array Lists
-
-    8.  Deques (Double-ended Queues)
-
-    9.  Tuples - Immutable ordered sequences
+    ~~7.  Tuples - Immutable ordered sequences~~
 
   - Sequential Access Patterns
-    1.  Sequential Traversal
+    ~~1.  Sequential Traversal~~
 
-    2.  Stacks (LIFO)
+    ~~2.  Stacks (LIFO)~~
 
-    3.  Queue (FIFO)
+    ~~3.  Queue (FIFO)~~
 
-    4.  Linear Search
+    ~~4.  Linear Search~~
 
-    5.  Stream Processing
+    ~~5.  Stream Processing~~
 
-    6.  BFS (Breadth-First Search)
+    ~~6.  BFS (Breadth-First Search)~~
 
-    7.  DFS (Depth-First Search)
+    ~~7.  DFS (Depth-First Search)~~
 
-    8.  Serialization/Deserialization
+    ~~8.  Serialization/Deserialization~~
 
 ---
 
